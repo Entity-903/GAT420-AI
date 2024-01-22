@@ -142,7 +142,7 @@ int main()
 	nodeC->children.push_back(nodeF); // C->F
 
 	// get search path to 'F' from node 'A'
-	auto path = getBFS(nodeA, 'F');
+	auto path = getDFS(nodeA, 'F');
 	// display path result
 	cout << "path: ";
 	for (auto node : path)
